@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap');
+
+:root {
+    --primary-color: #396E94;
+    --secondary-color: #E7C24F;
+    --accent1-color: #A43312;
+    --accent2-color: #381D2A;
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+    --callout-font: 'Lora', serif;
+    --nav-bg-color: #396E94;
+    --nav-link-color: #FFFFFF;
+    --nav-hover-link-color: #E7C24F;
+    --nav-hover-bg-color: #2E5A79;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F4F4F4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
+}
+
+#logo {
+    width: 150px;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-bg-color);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.8;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--heading-font);
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.article-img {
+    float: right;
+    width: 150px;
+    margin-left: 15px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a img {
+    width: 40px;
+    margin: 5px;
+}
+
+footer a {
+    display: inline-block;
+}
