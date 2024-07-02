@@ -1,0 +1,41 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #000; /* Adjust color to your preference */
+    background-color: #f0f0f0; /* Adjust color to your preference */
+    color: #333; /* Adjust color to your preference */
+}
+
+/* Profile Image */
+img {
+    float: right;
+    margin: 0 0 1rem 1rem; /* Adjust spacing as needed */
+}
+
+/* Header Navigation */
+header nav a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Position the Heading in the Aside */
+aside {
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: to make the text stand out */
+    padding: 5px; /* Optional: some padding for better visibility */
+}
