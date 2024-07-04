@@ -7,17 +7,17 @@
 
 /* Class Selectors */
 .box {
-    margin: 1rem;
-    padding: 1rem;
+    margin: 10px;
+    padding: 15px;
     border: 1px solid #000; /* Adjust color to your preference */
     background-color: #f0f0f0; /* Adjust color to your preference */
     color: #333; /* Adjust color to your preference */
 }
 
 /* Profile Image */
-img {
+.profile-img {
     float: right;
-    margin: 0 0 1rem 1rem; /* Adjust spacing as needed */
+    margin-left: 10px;; /* Adjust spacing as needed */
 }
 
 /* Header Navigation */
@@ -30,6 +30,14 @@ header nav a {
 /* Position the Heading in the Aside */
 aside {
     position: relative;
+}
+
+.aside-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255,0.8);
 }
 
 aside h2 {
