@@ -28,6 +28,25 @@ header {
     color: var(--nav-link-color);
 }
 
+/* Heading Styles */
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2em; /* Adjust font size as needed */
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    font-size: 1.5em; /* Adjust font size as needed */
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    font-size: 1.2em; /* Adjust font size as needed */
+}
+
 #logo {
     width: 150px;
 }
