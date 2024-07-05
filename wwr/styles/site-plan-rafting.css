@@ -1,69 +1,82 @@
+/* site-plan-rafting.css */
+
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
 :root {
-    --primary-color: #396E94;
-    --secondary-color: #E7C24F;
-    --accent1-color: #A43312;
-    --accent2-color: #381D2A;
+    --primary-color: #396e94;
+    --secondary-color: #e7c24f;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
     --heading-font: 'Roboto', sans-serif;
     --paragraph-font: 'Open Sans', sans-serif;
-    --callout-font: 'Lora', serif;
-    --nav-bg-color: #396E94;
-    --nav-link-color: #FFFFFF;
-    --nav-hover-link-color: #E7C24F;
-    --nav-hover-bg-color: #2E5A79;
+    --nav-background-color: #396e94;
+    --nav-link-color: #e7c24f;
+    --nav-hover-link-color: #a43312;
+    --nav-hover-background-color: #381d2a;
 }
+
+/* site-plan-rafting.css */
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #F4F4F4;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
     background-color: var(--primary-color);
-    color: var(--nav-link-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}
+
+h3 {
+    font-size: 1.2em;
+    color: var(--accent1-color);
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    text-align: center;
 }
 
 nav a {
     color: var(--nav-link-color);
     text-decoration: none;
-    margin-right: 15px;
-    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
 }
 
 nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-bg-color);
-    padding: 5px;
-    border-radius: 3px;
+    background-color: var(--nav-hover-background-color);
 }
 
-main {
-    padding: 20px;
+p {
+    margin: 0 0 15px 0;
 }
 
-h1, h2, h3 {
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
-}
 
-h4 {
-    font-family: var(--heading-font);
-    color: var(--accent2-color);
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: var(--nav-link-color);
-}
-
-footer p {
-    margin: 0;
-}
