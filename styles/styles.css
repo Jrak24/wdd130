@@ -1,49 +1,87 @@
-/* Universal Selector */
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Class Selectors */
-.box {
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid #000; /* Adjust color to your preference */
-    background-color: #f0f0f0; /* Adjust color to your preference */
-    color: #333; /* Adjust color to your preference */
+/* Header, Main, and Footer Layout */
+header, main, footer {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-/* Profile Image */
+/* Navigation Styling */
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* Profile Container Styling */
+.profile-container {
+    overflow: hidden;
+}
+
 .profile-img {
     float: right;
-    margin-left: 10px;; /* Adjust spacing as needed */
+    margin: 0 0 1rem 1rem;
+    width: 200px; /* Adjust width if necessary */
+    border-radius: 50%;
 }
 
-/* Header Navigation */
-header nav a {
-    margin-right: 1rem;
+/* Favorite Temples List Styling */
+.favorite-temples {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.favorite-temples li {
+    margin-bottom: 0.5rem;
+}
+
+.favorite-temples a {
+    color: steelblue;
     text-decoration: none;
-    color: #000;
+    font-weight: bold;
 }
 
-/* Position the Heading in the Aside */
+/* Aside Layout and Text Overlay */
 aside {
+    width: 100%;
     position: relative;
+    margin: 1rem 0;
 }
 
-.aside-heading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255,0.8);
+.image-container {
+    position: relative;
+    text-align: center;
 }
 
-aside h2 {
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: to make the text stand out */
-    padding: 5px; /* Optional: some padding for better visibility */
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 0.5rem;
+    color: white;
+    z-index: 10;
 }

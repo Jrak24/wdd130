@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap');
 
 :root {
-    --primary-color: #396E94;
-    --secondary-color: #E7C24F;
-    --accent1-color: #A43312;
-    --accent2-color: #381D2A;
+    --primary-color: #396e94; /* Example primary color */
+    --secondary-color: #e7c24f; /* Example secondary color */
+    --accent1-color: #a43312; /* Example accent color 1 */
+    --accent2-color: #381d2a; /* Example accent color 2 */
     --heading-font: 'Roboto', sans-serif;
     --paragraph-font: 'Open Sans', sans-serif;
     --callout-font: 'Lora', serif;
-    --nav-bg-color: #396E94;
-    --nav-link-color: #FFFFFF;
-    --nav-hover-link-color: #E7C24F;
-    --nav-hover-bg-color: #2E5A79;
 }
 
 body {
@@ -20,6 +16,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     background-color: #F4F4F4;
+    line-height: 1.6;
 }
 
 header {
@@ -40,12 +37,12 @@ nav a {
     text-decoration: none;
     margin-right: 15px;
     font-weight: bold;
+    padding: 5px;
 }
 
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-bg-color);
-    padding: 5px;
     border-radius: 3px;
 }
 
@@ -118,4 +115,3 @@ footer a img {
 footer a {
     display: inline-block;
 }
-/*For the about page*/
