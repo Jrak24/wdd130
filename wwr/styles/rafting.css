@@ -1,13 +1,13 @@
 /* Reset styles */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f0f0f0;
 }
 
@@ -57,7 +57,7 @@ nav ul li a {
 
 /* Section styles */
 .section {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .section h2 {
@@ -70,15 +70,14 @@ nav ul li a {
 }
 
 /* Adventures section styles */
-.adventures {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .adventures figure {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .adventures img {
@@ -95,14 +94,16 @@ nav ul li a {
 footer {
     background-color: #333;
     color: #fff;
-    text-align: right;
-    padding: 10px 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer p {
+    margin-bottom: 10px;
 }
 
 footer img {
     max-width: 30px;
-    margin-left: 10px;
+    margin: 0 10px;
 }
