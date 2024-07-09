@@ -51,10 +51,20 @@ main section, main aside {
 
 .madagascar-image {
   width: 200px;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
   float: left;
   margin-right: 20px;
+}
+
+#madagascar h2 {
+  position: absolute;
+  text-align: center;
+  top: -29px;
+  left: 25px;
+  color: black;
+  background: none;
+  padding: 5px;
 }
 
 .image-container {
@@ -64,14 +74,13 @@ main section, main aside {
 
 .image-container .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0;
-  width: 100%;
-  text-align: center;
   color: white;
   background: rgba(0, 0, 0, 0.5);
-  line-height: 200px; /* Match the height of the image */
+  padding: 5px;
 }
 
 .favorite-temples {
@@ -85,4 +94,5 @@ footer {
   text-align: center;
   padding: 5px 0;
   margin-top: 20px;
+  border-top: none;
 }
