@@ -1,0 +1,82 @@
+/* Reset and basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Quiz container styles */
+.quiz-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1 {
+    font-size: 1.5em;
+    color: #001f60;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+h1::before {
+    content: "\2713"; /* Checkmark symbol */
+    margin-right: 10px;
+    color: black;
+}
+
+/* Question styles */
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #001f60;
+}
+
+/* Input styles */
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+textarea {
+    height: 100px;
+    resize: none; /* Disable textarea resizing */
+}
+
+/* Button styles */
+button {
+    background-color: #001f60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #003380;
+}
