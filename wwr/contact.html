@@ -1,88 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact us for more information about our rafting services, reservations, and general inquiries.">
-  <title>Contact Us - [Your Rafting Company Name]</title>
-  <link rel="stylesheet" href="rafting.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rafting Adventures</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-  <header>
-    <h1>Rafting Adventures</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="contact-info">
-      <h2>Contact Information</h2>
-      <p>Address: 123 Rafting Lane, Adventure City, CO 12345</p>
-      <p>Phone: (123) 456-7890</p>
-      <p>Email: info@raftingcompany.com</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086419755607!2d-122.08572208468112!3d37.42204577982362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5a6d6c95db1%3A0xc7c72b5c4d6f4d95!2sGoogleplex!5e0!3m2!1sen!2sus!4v1590729279010!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<header>
+    <div class="container">
+        <h1>Rafting Adventures</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="contact-info">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>123 River Road, Adventureland</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@raftingadventures.com</p>
+        </div>
     </section>
 
-    <section id="employee-profiles">
-      <h2>Our Team</h2>
-      <div class="employee">
-        <img src="images/employee1.jpg" alt="Employee 1">
-        <p>John Doe, Guide</p>
-      </div>
-      <div class="employee">
-        <img src="images/employee2.jpg" alt="Employee 2">
-        <p>Jane Smith, Guide</p>
-      </div>
-      <div class="employee">
-        <img src="images/employee3.jpg" alt="Employee 3">
-        <p>Bob Johnson, Manager</p>
-      </div>
+    <section class="employee-profiles">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="images/employee1.jpg" alt="John Doe">
+                <p><strong>John Doe</strong><br>Rafting Guide</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee2.jpg" alt="Jane Smith">
+                <p><strong>Jane Smith</strong><br>Customer Service</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee3.jpg" alt="Mark Johnson">
+                <p><strong>Mark Johnson</strong><br>Safety Officer</p>
+            </div>
+        </div>
     </section>
 
-    <section id="contact-form">
-      <h2>Contact Us</h2>
-      <form action="submit_form.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <p>Purpose of Message:</p>
-        <label>
-          <input type="radio" name="purpose" value="general" required>
-          General Inquiry
-        </label>
-        <label>
-          <input type="radio" name="purpose" value="reservation">
-          Reservation Question
-        </label>
-        <label>
-          <input type="radio" name="purpose" value="suggestion">
-          Website Suggestion
-        </label>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <label>
-          <input type="checkbox" name="subscribe">
-          Please subscribe me to the monthly newsletter
-        </label>
-        
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
+    <section class="contact-form">
+        <div class="container">
+            <h2>Contact Form</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-  <footer>
-    <p>&copy; 2024 Rafting Adventures</p>
-    <a href="wireframe.png">Contact Us Wireframe</a>
-  </footer>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="purpose">Purpose of Message:</label>
+                <input type="radio" id="general" name="purpose" value="General Inquiry">
+                <label for="general">General Inquiry</label>
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                <label for="reservation">Reservation Question</label>
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 🌴 Rafting Adventures 🌴 | WDD130</p>
+        <p><a href="contact_wireframe.png">Contact Us Wireframe</a></p>
+    </div>
+</footer>
+
 </body>
 </html>

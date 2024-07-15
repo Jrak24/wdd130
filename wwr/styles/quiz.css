@@ -8,11 +8,6 @@ body {
     margin: 0;
 }
 
-h1 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
 .quiz-form {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -34,8 +29,9 @@ legend {
 .form-group label {
     display: block;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.1em;
     margin-bottom: 5px;
+    color: #2c2c2c;
 }
 
 .form-group input[type="text"],
@@ -68,6 +64,7 @@ button {
     border-radius: 4px;
     font-size: 1.1em;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {

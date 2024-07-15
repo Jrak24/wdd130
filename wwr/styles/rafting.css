@@ -1,96 +1,102 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header, footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Main Content Styles */
-  main {
-    padding: 20px;
-  }
-  
-  h2 {
-    border-bottom: 2px solid #000;
-    padding-bottom: 5px;
-  }
-  
-  #contact-info p, #employee-profiles p {
-    margin: 5px 0;
-  }
-  
-  .employee {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-  }
-  
-  .employee img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-  }
-  
-  form {
-    margin-top: 20px;
-  }
-  
-  form label {
-    display: block;
-    margin: 10px 0 5px;
-  }
-  
-  form input[type="text"], form input[type="email"], form textarea {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-  }
-  
-  form textarea {
-    height: 100px;
-  }
-  
-  form input[type="radio"] {
-    margin-right: 5px;
-  }
-  
-  form input[type="checkbox"] {
-    margin-right: 10px;
-  }
-  
-  form button {
-    display: block;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  form button:hover {
-    background-color: #555;
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info, .employee-profiles, .contact-form {
+  margin-bottom: 20px;
+}
+
+.employee-profiles img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.employee {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.employee p {
+  margin: 5px 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.contact-form input[type="radio"] {
+  width: auto;
+}
+
+.contact-form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
