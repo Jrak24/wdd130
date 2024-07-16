@@ -3,49 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W05 Quiz: Learning Activities</title>
+    <title>HTML & CSS Quiz</title>
     <link rel="stylesheet" href="styles/quiz.css">
 </head>
 <body>
     <header>
-        <h1>W05 Quiz: Learning Activities</h1>
+        <h1>HTML & CSS Quiz</h1>
     </header>
     <main>
-        <section>
-            <h2>Question 1</h2>
-            <p>A student posts a question about their form not working like they expected when they tested it in their local browser.</p>
-            <p>When they click on the label associated with a form input field, the field does not gain the focus for user input. The student is confused why this is not working like it should. What should your advice be to them given this code snippet they posted?</p>
-            <form>
-                <label for="age">Please Enter Your Age:</label>
-                <input type="number" id="age" name="age">
-                <button type="submit">Submit Your Answer</button>
-            </form>
-            <p>Choose the correct answer:</p>
-            <ul>
-                <li>
-                    <input type="radio" id="q1a1" name="q1" value="a">
-                    <label for="q1a1">The label text content must match the name of the input element.</label>
-                </li>
-                <li>
-                    <input type="radio" id="q1a2" name="q1" value="b">
-                    <label for="q1a2">The label's "for" attribute value must match the input element's "id" attribute value.</label>
-                </li>
-                <li>
-                    <input type="radio" id="q1a3" name="q1" value="c">
-                    <label for="q1a3">The id and name attribute values on the input cannot be equal.</label>
-                </li>
-                <li>
-                    <input type="radio" id="q1a4" name="q1" value="d">
-                    <label for="q1a4">Only inputs of type "text" can have label associations.</label>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Repeat the above structure for each question -->
-        
+        <form action="submit-quiz" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="question1">1. What does HTML stand for?</label>
+                <input type="text" id="question1" name="question1" required>
+            </div>
+            <div class="form-group">
+                <label for="question2">2. What does CSS stand for?</label>
+                <input type="text" id="question2" name="question2" required>
+            </div>
+            <div class="form-group">
+                <label for="question3">3. What is the correct HTML element for the largest heading?</label>
+                <select id="question3" name="question3" required>
+                    <option value="">Select an answer</option>
+                    <option value="<h1>">&lt;h1&gt;</option>
+                    <option value="<h6>">&lt;h6&gt;</option>
+                    <option value="<head>">&lt;head&gt;</option>
+                    <option value="<header>">&lt;header&gt;</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Quiz</button>
+            </div>
+        </form>
     </main>
     <footer>
-        <p>&copy; 2024 joddy Sornsomrej | WDD130 </p>
+        <p>&copy; 2024 HTML & CSS Quiz</p>
     </footer>
 </body>
 </html>
