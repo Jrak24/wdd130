@@ -1,74 +1,121 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Resetting default margin and padding */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Centered Page Content */
-header, main, footer {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Header Styles */
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Main Styles */
-main {
+.container {
     background-color: #fff;
-    padding: 20px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-form {
+    width: 100%;
+}
+
+.form-group {
     margin-bottom: 20px;
 }
 
-/* Form Group Styles */
-.form-group {
-    margin-bottom: 15px;
-}
-
-/* Label Styles */
 label {
+    font-weight: bold;
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    color: #003366;
+    font-size: 16px;
 }
 
-/* Input, Select, and Button Styles */
-input, select, button {
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    margin-top: 5px;
+    background-color: #fff;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus,
+input[type="number"]:focus {
+    border-color: #003366;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+pre {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
 }
 
 button {
-    background-color: #333;
-    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #003366;
+    color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #002244;
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.5);
+}
+
+/* Screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }

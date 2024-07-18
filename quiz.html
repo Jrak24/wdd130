@@ -1,50 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS Quiz</title>
+    <title>Basic HTML and CSS Quiz</title>
+    <meta name="description" content="Quiz about HTML and CSS">
+    <meta name="author" content="Your Name">
     <link rel="stylesheet" href="styles/quiz.css">
 </head>
 <body>
-    <header>
-        <h1>HTML & CSS Quiz</h1>
-    </header>
-    <main>
-        <form action="submit-quiz" method="post">
+    <main class="container" role="main" aria-labelledby="quiz-title">
+        <h1 id="quiz-title">Basic HTML and CSS Quiz</h1>
+        <form action="#" method="post" class="quiz-form" aria-describedby="form-description">
+            <div id="form-description" class="sr-only">Fill out the form below to test your knowledge of HTML and CSS.</div>
             <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="q1">1. What does the acronym CSS stand for?</label>
+                <input type="text" id="q1" name="q1" required aria-required="true">
             </div>
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="q2">2. How are id and class attributes selected in CSS?</label>
+                <textarea id="q2" name="q2" rows="4" required aria-required="true"></textarea>
             </div>
             <div class="form-group">
-                <label for="question1">1. What does HTML stand for?</label>
-                <input type="text" id="question1" name="question1" required>
-            </div>
-            <div class="form-group">
-                <label for="question2">2. What does CSS stand for?</label>
-                <input type="text" id="question2" name="question2" required>
-            </div>
-            <div class="form-group">
-                <label for="question3">3. What is the correct HTML element for the largest heading?</label>
-                <select id="question3" name="question3" required>
-                    <option value="">Select an answer</option>
-                    <option value="<h1>">&lt;h1&gt;</option>
-                    <option value="<h6>">&lt;h6&gt;</option>
-                    <option value="<head>">&lt;head&gt;</option>
-                    <option value="<header>">&lt;header&gt;</option>
+                <label for="q3">3. Which of the following is a valid CSS comment?</label>
+                <select id="q3" name="q3" required aria-required="true">
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="1">/* This is a comment */</option>
+                    <option value="2">// This is a comment</option>
+                    <option value="3"><!-- This is a comment --></option>
                 </select>
             </div>
             <div class="form-group">
-                <button type="submit">Submit Quiz</button>
+                <label for="q4">4. What is the bottom margin given this declaration?</label>
+                <pre aria-labelledby="q4">margin: 10px 5px 15px;</pre>
+                <input type="number" id="q4" name="q4" min="0" required aria-required="true">
             </div>
+            <button type="submit" aria-label="Submit the quiz">Submit Quiz</button>
         </form>
     </main>
-    <footer>
-        <p>&copy; 2024 HTML & CSS Quiz</p>
-    </footer>
 </body>
 </html>
