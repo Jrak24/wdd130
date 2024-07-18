@@ -104,8 +104,8 @@ main {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background: none;
+  color: #f7f4f4;
   display: flex;
   align-items: center;
   justify-content: center;
