@@ -1,4 +1,4 @@
-/* Reset default margin and padding for all elements */
+/* Reset specific elements */
 body, h1, h2, ul, p {
     margin: 0;
     padding: 0;
@@ -44,7 +44,6 @@ main {
 }
 
 .profile-img {
-    float: left;
     margin-right: 15px;
     border-radius: 50%; /* Optional: make the image circular */
     width: 100px; /* Adjust as needed */
@@ -54,7 +53,7 @@ main {
 /* Madagascar section styles */
 .madagascar-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
