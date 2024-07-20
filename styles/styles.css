@@ -1,4 +1,4 @@
-/* Reset specific elements */
+/* Basic Reset */
 body, h1, h2, ul, p {
     margin: 0;
     padding: 0;
@@ -81,3 +81,5 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Proper formatting for CSS comments */
