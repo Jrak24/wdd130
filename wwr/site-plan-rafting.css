@@ -73,6 +73,11 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+/* Grouped Headings */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 /* Main and Footer Styles */
 main {
     padding: 20px;
