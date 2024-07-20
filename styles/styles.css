@@ -1,85 +1,48 @@
-/* Basic Reset */
-body, h1, h2, ul, p {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* Basic styles for header */
 header {
-    background-color: #f4f4f4; /* Example background color */
-    padding: 10px;
-}
-
-/* Navigation styles */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #ddd; /* Example background color for navigation */
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
 nav a {
+    color: #fff;
+    padding: 0 15px;
     text-decoration: none;
-    color: #333; /* Example text color */
-    padding: 10px;
 }
 
-nav a:hover {
-    background-color: #bbb; /* Example hover effect */
-}
-
-/* Main content styles */
 main {
-    padding: 20px;
-    min-height: 80vh; /* Ensure main content takes up at least 80% of viewport height */
-    display: flex;
-    flex-direction: column;
+    margin: 20px;
 }
 
-/* Introduction section styles */
-#introduction {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+img#profile-img {
+    float: right;
+    margin-left: 20px;
+    max-width: 200px;
 }
 
-.profile-img {
-    margin-right: 15px;
-    border-radius: 50%; /* Optional: make the image circular */
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-}
-
-/* Madagascar section styles */
-.madagascar-container {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.madagascar-img {
-    width: 300px; /* Adjust size as needed */
-    height: auto;
-    margin-right: 20px;
-}
-
-.madagascar-text {
-    max-width: 500px; /* Adjust text block width as needed */
-}
-
-/* Box class styles */
-.box {
-    margin-bottom: 20px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #f4f4f4; /* Example background color */
-    text-align: center;
-    padding: 10px;
+aside {
     position: relative;
-    bottom: 0;
-    width: 100%;
+    margin: 20px;
 }
 
-/* Proper formatting for CSS comments */
+aside h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
