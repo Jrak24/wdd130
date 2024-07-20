@@ -9,9 +9,9 @@
   --heading-font: 'Roboto', sans-serif;
   --paragraph-font: Arial, sans-serif;
   --nav-background-color: #333;
-  --nav-link-color: white;
-  --nav-hover-link-color: #555;
-  --nav-hover-background-color: #777;
+  --nav-link-color: #ffffff; /* Updated to white */
+  --nav-hover-link-color: #dddddd; /* Lighter color for hover effect */
+  --nav-hover-background-color: #555;
 }
 
 /* General Styles */
@@ -63,18 +63,18 @@ nav li {
 }
 
 nav a {
-  color: var(--nav-link-color);
+  color: white; /* Ensure link text is white */
   text-decoration: none;
   padding: 15px 20px;
   display: block;
 }
 
 nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+  color: white; /* Ensure link text is white */
 }
 
 nav a:hover {
-  color: var(--nav-hover-link-color);
+  color: white; /* Slightly lighter color on hover */
   background-color: var(--nav-hover-background-color);
 }
 
