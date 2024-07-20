@@ -1,105 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* CSS Variables */
 :root {
-    --primary-color: #0E6EB8;
-    --secondary-color: #F9A825;
-    --accent1-color: #4CAF50;
-    --accent2-color: #F44336;
-    --heading-font: 'Roboto', sans-serif;
-    --paragraph-font: 'Roboto', sans-serif;
-    --nav-background-color: #333;
-    --nav-link-color: #fff; /* White color for navigation links */
-    --nav-hover-link-color: #0E6EB8;
-    --nav-hover-background-color: #ddd;
+  --primary-color: #0066cc;
+  --secondary-color: #00cc99;
+  --accent1-color: #ffcc00;
+  --accent2-color: #ff6600;
+  --heading-font: 'Roboto', sans-serif;
+  --paragraph-font: Arial, sans-serif;
+  --nav-background-color: #333;
+  --nav-link-color: white;
+  --nav-hover-link-color: #555;
+  --nav-hover-background-color: #777;
 }
 
+/* General Styles */
 body {
-    font-family: var(--paragraph-font);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: var(--paragraph-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+  max-width: 1200px;
+  padding: 20px;
 }
 
+/* Header Styles */
 header {
-    background: var(--nav-background-color);
-    color: #fff; /* White color for header text */
-    padding: 1em 0;
-    text-align: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  background-color: var(--nav-background-color);
+  color: white;
+  padding: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
 }
 
 header h1 {
-    margin: 0;
-    font-family: var(--heading-font);
+  text-align: center;
+  margin: 0;
 }
 
+header div {
+  text-align: right;
+}
+
+/* Navigation Styles */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
-    display: inline;
-    margin-right: 10px;
+  margin-right: 20px;
 }
 
 nav a {
-    color: var(--nav-link-color); /* Default link color */
-    text-decoration: none;
-    padding: 10px;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 
-/* Target specific navigation links */
-nav a[href="#home"],
-nav a[href="#about"],
-nav a[href="#contact"] {
-    color: var(--nav-link-color) !important; /* Ensure links remain white */
-}
-
+/* Main Content Styles */
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
+.purpose, .audience, .logo, .color-palette, .typography, .additional-info, .images {
+  margin-bottom: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: #333;
+.purpose h2, .audience h2, .logo h2, .color-palette h2, .typography h2, .additional-info h2, .images h2 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
 }
 
-#logo img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
-
-.color-swatches {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.color-swatch {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid #333;
-    margin-right: 10px;
-}
-
+/* Footer Styles */
 footer {
-    background: var(--nav-background-color);
-    color: var(--nav-link-color);
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+  background-color: var(--nav-background-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-content {
+  text-align: left;
+}
+
+/* Combined Headings Rule */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+
+/* Paragraph Styles */
+p {
+  font-family: var(--paragraph-font);
 }
