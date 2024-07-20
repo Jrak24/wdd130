@@ -1,129 +1,84 @@
-/* General Reset */
-body, h1, h2, p, ul {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Reset default margin and padding for all elements */
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  padding: 0;
-  margin: 0;
-}
-
-/* Header and Footer */
-header, .grid, footer {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
+/* Basic styles for header */
 header {
-  background-color: steelblue;
-  padding: 1rem;
+    background-color: #f4f4f4; /* Example background color */
+    padding: 10px;
 }
 
-footer {
-  background-color: steelblue;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-}
-
-/* Navigation */
+/* Navigation styles */
 nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ddd; /* Example background color for navigation */
 }
 
 nav a {
-  display: block;
-  padding: 0.5rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff;
+    text-decoration: none;
+    color: #333; /* Example text color */
+    padding: 10px;
 }
 
 nav a:hover {
-  background-color: #575757;
-  border-radius: 4px;
+    background-color: #bbb; /* Example hover effect */
 }
 
-/* Grid Layout */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr; /* Sidebar and main content */
-  gap: 1rem; /* Space between columns */
-  align-items: start;
-}
-
-aside {
-  padding: 1rem;
-  background-color: #f4f4f4;
-}
-
+/* Main content styles */
 main {
-  padding: 1rem;
+    padding: 20px;
+    min-height: 80vh; /* Ensure main content takes up at least 80% of viewport height */
+    display: flex;
+    flex-direction: column;
 }
 
-/* Profile Container */
-.profile-container {
-  position: relative;
+/* Introduction section styles */
+#introduction {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .profile-img {
-  float: right; /* Float the image to the right */
-  margin-left: 1rem; /* Space between image and text */
-  border-radius: 50%;
-  width: 200px; /* Adjust width as needed */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin-right: 15px;
+    border-radius: 50%; /* Optional: make the image circular */
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
 }
 
-.profile-container p {
-  text-align: justify; /* Wrap text around profile image */
-  margin: 0;
-}
-
-/* Madagascar Image */
-.image-container {
-  position: relative;
-  width: 100%;
-  margin-bottom: 1rem;
+/* Madagascar section styles */
+.madagascar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .madagascar-img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
 }
 
-.overlay-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: none;
-  color: #f7f4f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  padding: 0.5rem;
-  border-radius: 8px;
-  text-align: center;
+.madagascar-text {
+    max-width: 500px; /* Adjust text block width as needed */
 }
 
-/* Madagascar Text */
-aside p {
-  margin-top: 1rem;
-  line-height: 1.6;
+/* Box class styles */
+.box {
+    margin-bottom: 20px;
 }
 
-/* Heading */
-h1 {
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.5rem;
+/* Footer styles */
+footer {
+    background-color: #f4f4f4; /* Example background color */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

@@ -1,16 +1,17 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* CSS Variables */
+/* Define CSS Variables */
 :root {
-  --primary-color: #0066cc;
-  --secondary-color: #00cc99;
-  --accent1-color: #ffcc00;
-  --accent2-color: #ff6600;
+  --primary-color: #333;
+  --secondary-color: #555;
+  --accent1-color: #ff6600;
+  --accent2-color: #3399ff;
   --heading-font: 'Roboto', sans-serif;
-  --paragraph-font: Arial, sans-serif;
+  --paragraph-font: 'Arial', sans-serif;
   --nav-background-color: #333;
-  --nav-link-color: #ffffff; /* Updated to white */
-  --nav-hover-link-color: #dddddd; /* Lighter color for hover effect */
+  --nav-link-color: white;
+  --nav-hover-link-color: #ff6600;
   --nav-hover-background-color: #555;
 }
 
@@ -22,8 +23,6 @@ body {
   box-sizing: border-box;
   background-color: #f9f9f9;
   color: #333;
-  max-width: 1200px;
-  padding: 20px;
 }
 
 /* Header Styles */
@@ -32,7 +31,7 @@ header {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   background-color: var(--nav-background-color);
-  color: white;
+  color: var(--nav-link-color);
   padding: 10px;
 }
 
@@ -44,13 +43,13 @@ header {
 header h1 {
   text-align: center;
   margin: 0;
+  color: var(--nav-link-color);
 }
 
-header div {
-  text-align: right;
+nav {
+  background-color: var(--nav-background-color);
 }
 
-/* Navigation Styles */
 nav ul {
   display: flex;
   list-style: none;
@@ -63,19 +62,18 @@ nav li {
 }
 
 nav a {
-  color: white; /* Ensure link text is white */
+  color: var(--nav-link-color);
   text-decoration: none;
-  padding: 15px 20px;
-  display: block;
+  padding: 15px;
 }
 
 nav a:link, nav a:visited {
-  color: white; /* Ensure link text is white */
+  color: var(--nav-link-color);
 }
 
 nav a:hover {
-  color: white; /* Slightly lighter color on hover */
   background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
 }
 
 /* Main Content Styles */
@@ -83,34 +81,50 @@ main {
   padding: 20px;
 }
 
-.purpose, .audience, .logo, .color-palette, .typography, .additional-info, .images {
+.history {
   margin-bottom: 20px;
 }
 
-.purpose h2, .audience h2, .logo h2, .color-palette h2, .typography h2, .additional-info h2, .images h2 {
+.history h2 {
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 5px;
 }
 
-/* Footer Styles */
-footer {
-  background-color: var(--nav-background-color);
-  color: white;
-  padding: 10px;
+.adventure {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.adventure figure {
+  flex: 1 1 30%;
+  margin: 10px;
   text-align: center;
 }
 
-.footer-content {
-  text-align: left;
+.adventure img {
+  width: 100%;
+  height: auto;
 }
 
-/* Combined Headings Rule */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  font-weight: bold;
+.adventure figcaption {
+  margin-top: 5px;
 }
 
-/* Paragraph Styles */
-p {
-  font-family: var(--paragraph-font);
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+  padding: 10px;
+}
+
+.social-media a {
+  margin-left: 10px;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
 }
