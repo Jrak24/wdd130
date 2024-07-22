@@ -1,24 +1,13 @@
-/* Reset styles for better cross-browser consistency */
-html, body, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-
 /* Class Selectors */
-/* Class selector for box elements */
 .box {
-    padding: 0;
-    margin: 0;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 main img {
     float: right;
-    margin: 10px;
+    margin: 0 0 10px 10px;
 }
 
 aside {
@@ -27,6 +16,7 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
