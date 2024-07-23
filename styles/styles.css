@@ -1,8 +1,13 @@
 /* styles/styles.css */
 
-/* Universal selector removed */
+/* Remove or adjust universal selector */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 
-/* Box class styling */
+/* Class selector */
 .box {
     margin: 20px;
     padding: 20px;

@@ -3,18 +3,18 @@
 
 /* CSS Variables */
 :root {
-  --primary-color: #1a73e8; /* Example primary color */
-  --secondary-color: #ffffff; /* Example secondary color */
-  --accent1-color: #fbbc05; /* Example accent color 1 */
-  --accent2-color: #ea4335; /* Example accent color 2 */
+  --primary-color: #396e94; /* Replace with your primary color */
+  --secondary-color: #e7c24f; /* Replace with your secondary color */
+  --accent1-color: #a43312; /* Replace with your accent color 1 */
+  --accent2-color: #381d2a; /* Replace with your accent color 2 */
   
   --heading-font: 'Roboto', sans-serif;
   --paragraph-font: 'Open Sans', sans-serif;
   
-  --nav-background-color: #ffffff; /* Example nav background color */
-  --nav-link-color: #1a73e8; /* Example nav link color */
-  --nav-hover-link-color: #ea4335; /* Example nav hover link color */
-  --nav-hover-background-color: #f1f1f1; /* Example nav hover background color */
+  --nav-background-color: #ffffff; /* Replace with your nav background color */
+  --nav-link-color: #396e94; /* Replace with your nav link color */
+  --nav-hover-link-color: #a43312; /* Replace with your nav hover link color */
+  --nav-hover-background-color: #f1f1f1; /* Replace with your nav hover background color */
 }
 
 /* Body Styling */
@@ -23,6 +23,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+  color: var(--primary-color); /* Optional: Set text color to primary color */
 }
 
 /* Grouped Headings Styling */
@@ -34,7 +35,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Header Styling */
 header {
   padding: 20px;
-  background-color: var(--accent1-color);
+  background-color: var(--accent1-color); /* Set header background color */
+  color: #ffffff; /* Optional: Set text color to white */
+  text-align: center;
 }
 
 /* Paragraph Styling */
@@ -65,4 +68,12 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--accent2-color); /* Set footer background color */
+  color: #ffffff; /* Optional: Set text color to white */
 }
