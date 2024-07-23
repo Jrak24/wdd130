@@ -1,65 +1,68 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* CSS Variables */
+:root {
+  --primary-color: #1a73e8; /* Example primary color */
+  --secondary-color: #ffffff; /* Example secondary color */
+  --accent1-color: #fbbc05; /* Example accent color 1 */
+  --accent2-color: #ea4335; /* Example accent color 2 */
+  
+  --heading-font: 'Roboto', sans-serif;
+  --paragraph-font: 'Open Sans', sans-serif;
+  
+  --nav-background-color: #ffffff; /* Example nav background color */
+  --nav-link-color: #1a73e8; /* Example nav link color */
+  --nav-hover-link-color: #ea4335; /* Example nav hover link color */
+  --nav-hover-background-color: #f1f1f1; /* Example nav hover background color */
+}
+
+/* Body Styling */
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+/* Grouped Headings Styling */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Header Styling */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+  padding: 20px;
+  background-color: var(--accent1-color);
 }
 
-header h1 {
-    margin: 0;
+/* Paragraph Styling */
+p {
+  padding: 10px 0;
 }
 
-.student-info {
-    font-style: italic;
-    color: #ccc;
-    margin-top: 0.5em;
+/* Navigation Styling */
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 
-main {
-    padding: 20px;
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
 }
 
-section {
-    margin-bottom: 20px;
+/* Navigation Link States */
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
 }
 
-h2 {
-    color: #333;
-}
-
-#logo img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
-
-.color-swatches {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.color-swatch {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid #333;
-    margin-right: 10px;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
