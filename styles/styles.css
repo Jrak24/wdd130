@@ -1,13 +1,6 @@
 /* styles/styles.css */
 
-/* Remove or adjust universal selector */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-/* Class selector */
+/* Class Selectors */
 .box {
     margin: 20px;
     padding: 20px;
