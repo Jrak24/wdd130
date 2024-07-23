@@ -1,22 +1,74 @@
-/* Class Selectors */
-.box {
-    border: 1px solid #000;
-    padding: 10px;
-    margin: 10px 0;
+/* styles/styles.css */
+
+/* Universal selector removed as it's causing issues */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Box class styling */
+.box {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Float images within the main element to the right */
 main img {
     float: right;
-    margin: 0 0 10px 10px;
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
+/* Position aside element relatively */
 aside {
     position: relative;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
+/* Position h2 within aside absolutely */
 aside h2 {
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+}
+
+/* Additional styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+ul.box {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.box li {
+    margin: 10px 0;
 }

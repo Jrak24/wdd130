@@ -1,79 +1,58 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
-/* Define CSS Variables */
 :root {
-    --primary-color: #396e94;
-    --secondary-color: #e7c24f;
-    --accent1-color: #a43312;
-    --accent2-color: #381d2a;
+  --primary-color: #1a73e8; /* Example primary color */
+  --secondary-color: #ffffff; /* Example secondary color */
+  --accent1-color: #fbbc05; /* Example accent color 1 */
+  --accent2-color: #ea4335; /* Example accent color 2 */
 
-    --heading-font: 'Roboto', sans-serif;
-    --paragraph-font: 'Open Sans', sans-serif;
+  --heading-font: 'Roboto', sans-serif;
+  --paragraph-font: 'Open Sans', sans-serif;
 
-    --nav-background-color: #396e94;
-    --nav-link-color: #ffffff;
-    --nav-hover-link-color: #e7c24f;
-    --nav-hover-background-color: #a43312;
+  --nav-background-color: #ffffff; /* Example nav background color */
+  --nav-link-color: #1a73e8; /* Example nav link color */
+  --nav-hover-link-color: #ea4335; /* Example nav hover link color */
+  --nav-hover-background-color: #f1f1f1; /* Example nav hover background color */
 }
 
-/* Body styling */
 body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-    margin: 0 auto;
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
 }
 
-/* Header styling */
-header {
-    padding: 20px;
-    background-color: var(--accent1-color);
-    text-align: center;
-}
-
-/* Grouped heading styles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-/* Paragraph styling */
+header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
 p {
-    padding: 25px;
+  padding: 25px;
 }
 
-/* Navigation styling */
 nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
 }
 
-/* Navigation links styling */
 nav a {
-    display: block;
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 1rem;
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
 }
 
-/* Link states styling */
 nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+  color: var(--nav-link-color);
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--accent2-color);
-    color: #fff;
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
