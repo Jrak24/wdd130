@@ -1,5 +1,7 @@
-=@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
+/* Define CSS Variables */
 :root {
     --primary-color: #396e94;
     --secondary-color: #e7c24f;
@@ -15,6 +17,7 @@
     --nav-hover-background-color: #a43312;
 }
 
+/* Body styling */
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
@@ -22,21 +25,25 @@ body {
     margin: 0 auto;
 }
 
+/* Header styling */
 header {
     padding: 20px;
     background-color: var(--accent1-color);
     text-align: center;
 }
 
+/* Grouped heading styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* Paragraph styling */
 p {
     padding: 25px;
 }
 
+/* Navigation styling */
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
@@ -45,6 +52,7 @@ nav {
     padding: 10px 0;
 }
 
+/* Navigation links styling */
 nav a {
     display: block;
     color: var(--nav-link-color);
@@ -52,11 +60,8 @@ nav a {
     padding: 1rem;
 }
 
-nav a:link {
-    color: var(--nav-link-color);
-}
-
-nav a:visited {
+/* Link states styling */
+nav a:link, nav a:visited {
     color: var(--nav-link-color);
 }
 
@@ -65,6 +70,7 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 20px;
